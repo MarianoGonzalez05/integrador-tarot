@@ -12,13 +12,13 @@ El tarot te conecta con el universo y con tus guías, quienes te muestran, a tra
 ![Imagen de ejemplo](readme/tirada-amorosa.png)
 
 #### 2. Tirada Nuevo Proyecto
-![Imagen de ejemplo](readme/tirada-nuevo-proyecto.ppg)
+![Imagen de ejemplo](readme/tirada-nuevo-proyecto.png)
 
 #### 3. Tirada de Vidas Pasadas
-![Imagen de ejemplo](readme/vidas-pasadas.ppg)
+![Imagen de ejemplo](readme/vidas-pasadas.png)
 
 #### 4. Tirada de Karma
-![Imagen de ejemplo](readme/karma.ppg)
+![Imagen de ejemplo](readme/karma.png)
 
 ---
 
