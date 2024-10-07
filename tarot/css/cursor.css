@@ -1,0 +1,60 @@
+/* Estilos para el cursor */
+.cursor {
+    position: fixed;
+    width: 20px; /* Tamaño del círculo */
+    height: 20px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid rgba(198, 212, 0, 0.8); /* Color de las estrellas */
+    transform: rotate(1deg) rgba(101, 13, 184, 0.8); /* Color del cursor */
+    pointer-events: none; /* Para que no interfiera con otros elementos */
+    transform: translate(-50%, -50%); /* Centrar el cursor */
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estrellas */
+.star {
+    position: fixed;
+    width: 0; /* Ajusta el tamaño de las estrellas usando bordes */
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid rgba(198, 212, 0, 0.8); /* Color de las estrellas */
+    transform: rotate(1deg);
+    pointer-events: none; /* Para que no interfiera con otros elementos */
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+/* Agregar un pseudo-elemento para hacer que la estrella sea más completa */
+.star::before {
+    content: '';
+    position: absolute;
+    left: -4px; /* Ajusta esto para centrar la estrella */
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid rgba(198, 212, 0, 0.8); /* Color de las estrellas */
+    transform: rotate(-20deg);
+}
+
+.star::after {
+    content: '';
+    position: absolute;
+    left: -4px; /* Ajusta esto para centrar la estrella */
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid rgba(198, 212, 0, 0.8); /* Color de las estrellas */
+    transform: rotate(0deg);
+}
+
+/* Animación activa para el cursor */
+.cursor.active {
+    transform: translate(-50%, -50%) scale(1.2); /* Aumenta el tamaño al hacer clic */
+}
